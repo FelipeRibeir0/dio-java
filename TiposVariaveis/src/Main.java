@@ -10,12 +10,20 @@ public class Main {
         int populacao = 2147483647; // Um valor que esteja entre -2.147.483.648 e 2.147.483.647, ele utilize 4 bytes de memória
         long dividaNacional = 1234567890123456789L; // Um valor que esteja entre -9223372036854775808L e 9223372036854775807L, ele usa 8 bytes de memória.
 
+        System.out.println("idade: " + idade);
+        System.out.println("ano: " + ano);
+        System.out.println("populacao: " + populacao);
+        System.out.println("dividaNacional: " + dividaNacional);
+
         // Tipos primitivos com partes fracionárias(número quebrado):
 
         float distanciaEstrelas = 3.4028235e+38f; // Um valor que esteja entre 1.4E-45 e 3.4028235E38, ele usa 4 bytes de memória
         double pibPais = 1.7976931348623157e+308; // Um valor que esteja entre 4.9E-324 e 1.7976931348623157E308, ele usa 8 bytes de memória
 
-        System.out.println("Você pode acessar esses limites positivos e negativos utilizando Tipo.MAX_VALUE e Tipo.MIN_VALUE");
+        System.out.println("\ndistanciaEstrelas: " + distanciaEstrelas);
+        System.out.println("pibPais: " + pibPais);
+
+        System.out.println("\nVocê pode acessar esses limites positivos e negativos utilizando Tipo.MAX_VALUE e Tipo.MIN_VALUE");
 
         /* O tipo double e o tipo integer são os mais comúns devido aos computadores modernos não necessitarem essa atenção especial com o uso de memória
         Geralmente não trabalhamos com números gigantes para usar o long, e o float somente mantém sua precisão decimal entre 6 e 7 números*/
