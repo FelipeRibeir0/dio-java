@@ -24,4 +24,3 @@ public class Desafio05 {
             scanner.close();
         }
     }
-}
