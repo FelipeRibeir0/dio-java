@@ -10,6 +10,6 @@ public abstract class Veiculo {
     public void setChassi(String chassi) {
         this.chassi = chassi;
     }
-    
+
     public abstract void ligar();
 }
