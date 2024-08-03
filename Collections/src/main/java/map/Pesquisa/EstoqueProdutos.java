@@ -30,17 +30,50 @@ public class EstoqueProdutos {
         return valorTotal;
     }
 
-    public Produto obterProdutoMaisCaro(){
+    public Produto obterProdutoMaisBarato() {
+        Produto produtoMaisBarato = null;
+        double menorPreco = Double.MAX_VALUE;
+
+        if (!estoqueProdutosMap.isEmpty()) {
+            for (Produto produto : estoqueProdutosMap.values()) {
+                if (produto.getPreco() < menorPreco) {
+                    menorPreco = produto.getPreco();
+                    produtoMaisBarato = produto;
+                }
+            }
+        }
+        return produtoMaisBarato;
+    }
+
+    public Produto obterProdutoMaisCaro() {
         Produto produtoMaisCaro = null;
         double maiorPreco = Double.MIN_VALUE;
 
-        if(!estoqueProdutosMap.isEmpty()){
-            for(Produto produto : estoqueProdutosMap.values()){
-                if(produto.getPreco() > maiorPreco){
+        if (!estoqueProdutosMap.isEmpty()) {
+            for (Produto produto : estoqueProdutosMap.values()) {
+                if (produto.getPreco() > maiorPreco) {
+                    maiorPreco = produto.getPreco();
                     produtoMaisCaro = produto;
                 }
             }
         }
         return produtoMaisCaro;
+    }
+
+    public static void main(String[] args) {
+        EstoqueProdutos estoque = new EstoqueProdutos();
+        estoque.exibirProduto();
+
+        estoque.adicionarProduto(1001, "Arroz", 50, 5.99);
+        estoque.adicionarProduto(1002, "Feijão", 30, 7.49);
+        estoque.adicionarProduto(1003, "Macarrão", 20, 3.89);
+        estoque.adicionarProduto(1004, "Açúcar", 40, 4.25);
+        estoque.adicionarProduto(1005, "Sal", 100, 2.99);
+
+        estoque.exibirProduto();
+
+        System.out.println("Valor total do Estoque: R$ "+estoque.calcularValorTotalEstoque());
+        System.out.println("Produto mais caro: "+estoque.obterProdutoMaisCaro());
+        System.out.println("Produto mais barato: "+estoque.obterProdutoMaisBarato());
     }
 }
