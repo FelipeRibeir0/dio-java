@@ -2,12 +2,7 @@ package com.exemplo;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Disabled;
 import java.time.LocalDate;
-
-/**
- * Unit test for simple App.
- */
 
 public class PessoaTest {
 
@@ -48,5 +43,4 @@ public class PessoaTest {
         int idadeEsperada = LocalDate.now().getYear() - 2000;
         Assertions.assertEquals(idadeEsperada, idade, "A idade deve estar correta baseada na data de nascimento");
     }
-
 }

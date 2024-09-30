@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.exemplo.PessoaTest" time="0.01" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.exemplo.AssertionsTest" time="0.062" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -56,7 +56,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testGetIdade" classname="com.exemplo.PessoaTest" time="0.002"/>
-  <testcase name="testGetNome" classname="com.exemplo.PessoaTest" time="0.002"/>
-  <testcase name="testGetNascimento" classname="com.exemplo.PessoaTest" time="0.002"/>
+  <testcase name="validarMesmoValor" classname="com.exemplo.AssertionsTest" time="0.018"/>
+  <testcase name="validarLancamentos" classname="com.exemplo.AssertionsTest" time="0.008">
+    <failure message="array contents differ at index [3], expected: &lt;7&gt; but was: &lt;6&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: array contents differ at index [3], expected: <7> but was: <6>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertArrayEquals.failArraysNotEqual(AssertArrayEquals.java:440)
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:241)
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:87)
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:83)
+	at org.junit.jupiter.api.Assertions.assertArrayEquals(Assertions.java:1277)
+	at com.exemplo.AssertionsTest.validarLancamentos(AssertionsTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+]]></failure>
+  </testcase>
+  <testcase name="validarSeObjetoEstaNulo" classname="com.exemplo.AssertionsTest" time="0.014"/>
 </testsuite>
