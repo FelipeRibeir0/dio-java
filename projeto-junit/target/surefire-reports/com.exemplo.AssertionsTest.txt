@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.exemplo.AssertionsTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.062 s <<< FAILURE! -- in com.exemplo.AssertionsTest
-com.exemplo.AssertionsTest.validarLancamentos -- Time elapsed: 0.008 s <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.137 s <<< FAILURE! -- in com.exemplo.AssertionsTest
+com.exemplo.AssertionsTest.validarLancamentos -- Time elapsed: 0.015 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: array contents differ at index [3], expected: <7> but was: <6>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -11,7 +11,7 @@ org.opentest4j.AssertionFailedError: array contents differ at index [3], expecte
 	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:87)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:83)
 	at org.junit.jupiter.api.Assertions.assertArrayEquals(Assertions.java:1277)
-	at com.exemplo.AssertionsTest.validarLancamentos(AssertionsTest.java:21)
+	at com.exemplo.AssertionsTest.validarLancamentos(AssertionsTest.java:20)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)

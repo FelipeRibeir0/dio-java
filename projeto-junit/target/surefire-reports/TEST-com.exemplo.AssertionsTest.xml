@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.exemplo.AssertionsTest" time="0.062" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.exemplo.AssertionsTest" time="0.137" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/home/felipe/dev_tools/jdk-22.0.1/lib"/>
-    <property name="sun.java.command" value="/home/felipe/workspace/dio-java/projeto-junit/target/surefire/surefirebooter-20240930151817385_3.jar /home/felipe/workspace/dio-java/projeto-junit/target/surefire 2024-09-30T15-18-17_282-jvmRun1 surefire-20240930151817385_1tmp surefire_0-20240930151817385_2tmp"/>
+    <property name="sun.java.command" value="/home/felipe/workspace/dio-java/projeto-junit/target/surefire/surefirebooter-20241002191806117_3.jar /home/felipe/workspace/dio-java/projeto-junit/target/surefire 2024-10-02T19-18-05_930-jvmRun1 surefire-20241002191806117_1tmp surefire_0-20241002191806117_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/felipe/workspace/dio-java/projeto-junit/target/test-classes:/home/felipe/workspace/dio-java/projeto-junit/target/classes:/home/felipe/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/felipe/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/felipe/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/felipe/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/felipe/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/felipe/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/felipe/workspace/dio-java/projeto-junit/target/surefire/surefirebooter-20240930151817385_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/felipe/workspace/dio-java/projeto-junit/target/surefire/surefirebooter-20241002191806117_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
     <property name="user.name" value="felipe"/>
@@ -56,8 +56,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="validarMesmoValor" classname="com.exemplo.AssertionsTest" time="0.018"/>
-  <testcase name="validarLancamentos" classname="com.exemplo.AssertionsTest" time="0.008">
+  <testcase name="validarMesmoValor" classname="com.exemplo.AssertionsTest" time="0.04"/>
+  <testcase name="validarLancamentos" classname="com.exemplo.AssertionsTest" time="0.015">
     <failure message="array contents differ at index [3], expected: &lt;7&gt; but was: &lt;6&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: array contents differ at index [3], expected: <7> but was: <6>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -66,11 +66,11 @@
 	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:87)
 	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:83)
 	at org.junit.jupiter.api.Assertions.assertArrayEquals(Assertions.java:1277)
-	at com.exemplo.AssertionsTest.validarLancamentos(AssertionsTest.java:21)
+	at com.exemplo.AssertionsTest.validarLancamentos(AssertionsTest.java:20)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ]]></failure>
   </testcase>
-  <testcase name="validarSeObjetoEstaNulo" classname="com.exemplo.AssertionsTest" time="0.014"/>
+  <testcase name="validarSeObjetoEstaNulo" classname="com.exemplo.AssertionsTest" time="0.034"/>
 </testsuite>

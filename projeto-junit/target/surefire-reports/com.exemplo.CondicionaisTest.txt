@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.exemplo.PessoaTest
+Test set: com.exemplo.CondicionaisTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s -- in com.exemplo.PessoaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.014 s -- in com.exemplo.CondicionaisTest
